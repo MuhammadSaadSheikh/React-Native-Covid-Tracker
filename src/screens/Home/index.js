@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button } from 'react-native'
 
 //Style
 import styles from './style'
@@ -7,9 +7,11 @@ import styles from './style'
 //Component
 import { Cards } from '../../components'
 
-function Home(props) {
+const Home = ({navigation}) => {
     return <View style={styles.mainContainer}>
-        <Cards />
+        {/* <Cards /> */}
+        <Text>Home</Text>
+        <Button title='Sign In' onPress={() => navigation.navigate('Home') }  />
     </View>
 }
 

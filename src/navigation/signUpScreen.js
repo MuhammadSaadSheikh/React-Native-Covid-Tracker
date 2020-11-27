@@ -1,13 +1,13 @@
 import React from 'react'
 
 //Screen
-import Home from '../screens/Home'
+import SignUp from '../screens/SignUp'
 
-export default class homeScreen extends React.Component{
+export default class signUpScreen extends React.Component{
     static navigationOptions = ({navigation}) => ({
         // header: null
     })
     render(){
-        return <Home />
+        return <SignUp />
     }
 }
