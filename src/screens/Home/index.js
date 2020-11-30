@@ -9,9 +9,9 @@ import { Cards } from '../../components'
 
 const Home = ({navigation}) => {
     return <View style={styles.mainContainer}>
-        {/* <Cards /> */}
         <Text>Home</Text>
-        <Button title='Sign In' onPress={() => navigation.navigate('Home') }  />
+        <Button title='Sign In' onPress={() => navigation.push('SignIn') }  />
+        <Button title='Sign Up' onPress={() => navigation.navigate('SignUp') }  />
     </View>
 }
 

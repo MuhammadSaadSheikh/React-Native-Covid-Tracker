@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, TouchableOpacity } from 'react-native'
 
 //Style
 import styles from './style'
@@ -12,6 +12,9 @@ const SignIn = ({navigation}) => {
         {/* <Cards /> */}
         <Text style={styles.heading} >Sign In</Text>
         {/* <Button title='Sign Up' onPress={() => navigation.push('Signup') }  /> */}
+        <TouchableOpacity onPress={ () => navigation.push('CreateAccount')} >
+            <Text> Create Account </Text>
+        </TouchableOpacity>
     </View>
 }
 
