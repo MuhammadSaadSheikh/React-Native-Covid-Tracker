@@ -11,7 +11,8 @@ const Home = ({navigation}) => {
     return <View style={styles.mainContainer}>
         <Text>Home</Text>
         <Button title='Sign In' onPress={() => navigation.push('SignIn') }  />
-        <Button title='Sign Up' onPress={() => navigation.navigate('SignUp') }  />
+        <Button title='Sign Up' onPress={() => navigation.push('SignUp') }  />
+        <Button title='React Native Naavigation' onPress={() => navigation.navigate('detail', { name: 'React Native Navigation' } ) }  />
     </View>
 }
 
